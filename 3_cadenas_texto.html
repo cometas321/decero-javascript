@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            //cadenas de texto string 
+            let nombre = "rene";
+            let apellido = "ccoyto";
+            let saludo = new String("hola mundo");
+            //en moren todo un texto que sea todo un parrafo de un poema 
+            let loren = "Yo no hablo de venganzas ni de perdones; el olvido es la única venganza y el único perdón.";
+
+            console.log(nombre, apellido, saludo);
+            //con el metodo length se obtiene la longitud de la cadena
+            console.log(
+                nombre.length, 
+                apellido.length, 
+                saludo.length
+                );
+            //con el metodo de toUpperCase se convierte a mayusculas y con toLowerCase a minusculas
+            console.log(
+                nombre.toUpperCase(), 
+                apellido.toLowerCase(), 
+                );
+            //para encontrar una palabra dentro de una cadena de texto se usa el metodo de includes
+            //el metodo de trim se una para hacer un arreglo de subcadenas
+            //el metodo de split se usa para hacer un arreglo unsando un separador del ejemplo seria el ";" y el " " para hacer un arreglo 
+            console.log(
+                loren.includes("olvido"),
+                loren.includes("rene"),
+                loren,
+                loren.trim(),
+                loren.split(" "),
+                loren.split(";"),
+            );
+            
+
+        </script>
+    </body>
+    
+</html>

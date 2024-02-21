@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            //declarando arreglos los cuale se guarda dentro de  corchetes
+            const a = [];
+            const b = [1,true,"hola",["a","b","c",[1,2,3]]];
+            console.log(a);
+
+            console.log(b);
+            console.log(b[0]);
+            console.log(b[1]);
+            console.log(b[2]);
+            console.log(b[3]);
+            console.log(b[3][1]);
+            console.log(b[3][3]);
+            console.log(b[3][3][1]);
+
+            // nuevas formas de crear arreglo
+            const c = Array.of("x","y","z",9,8,7);
+            console.log(c);
+            //arreglo de 100 elementos de tipo false y fill es el que se encarga de llenarlo de false
+            const d = Array(100).fill(false);
+            console.log(d);
+
+            const colores = ["rojo","azul","verde"];
+            console.log(colores);
+
+            //push agrega elementos al final
+            colores.push("negro");
+            console.log(colores);
+            
+            //pop elimina el ultimo elemento
+            colores.pop();
+            console.log(colores);
+
+            //un metdo para ejecutar una funcion para cada una de mis arreglos
+            colores.forEach(function(el,index){
+                console.log(`<li id="${index}">${el}</li>`);
+            })
+
+        </script>
+    </body>
+    
+</html>

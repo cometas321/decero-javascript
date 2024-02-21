@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js"></script>
+
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            /*Ejercicio 1: Escribe un programa que lea de la entrada estándar dos números y muestre 
+            en la salida estándar su suma, resta, multiplicación y división.*/
+            /*
+            let num1 = parseInt(prompt("ingresa un numero: "));
+            let num2 = parseInt(prompt("ingresa otro numero: "));
+
+            let suma = num1 + num2;
+            let resta = num1 - num2;
+            let multiplicacion = num1*num2;
+            let division = num1/num2;
+
+            console.log("la suma es: " , suma);
+            console.log("la resta es: ", resta);
+            console.log("la multipllicacion es: ", multiplicacion);
+            console.log("la divisin es : ", division);
+            */
+
+
+            /* Ejercicio 2: Escribir un programa que de la entrada estándar el precio de un producto y 
+            muestre en la salida estándar el precio del producto al aplicarle el IVA.*/
+            /*
+            let precioPro = parseFloat(prompt("ingresa el precio del producto: "));
+            const IVA = 0.18;
+
+            let precioProFinal = precioPro + (precioPro*IVA);
+
+            console.log("el precio final del producto es: ", precioProFinal);
+            */
+
+
+            /*ejercicio 3: Realice un programa que lea de la entrada estándar los siguientes datos 
+            de una persona:
+            Edad: dato de tipo entero. 
+            Sexo: dato de tipo carácter.
+            Altura en metros: dato de tipo real.
+            Tras leer los datos, el programa debe mostrarlos en la salida estándar.*/
+
+            /*
+            let edad = parseInt(prompt("ingrese su edad: "));
+            let sexo = prompt("ingrese su sexo: ");
+            let altura = parseFloat(prompt("ingrese su altura: "));
+
+
+            console.log("la edad es de tipo: ", typeof edad);
+            console.log("el sexo es de tipo: ", typeof sexo);
+            console.log("la altura es de tipo : ", typeof altura);
+            */
+
+            /*ejercicio 4:*/
+            /*
+            let a = parseInt(prompt("ingrese un numero: "));
+            let b = parseInt(prompt("ingprese otro numero: "));
+
+            let res = (a/b) +1;
+            console.log(res);
+            */
+           
+            /*ejercicio 5:*/
+            /*
+            let a = parseInt(prompt("ingrese un numero: "));
+            let b = parseInt(prompt("ingprese otro numero: "));
+            let c = parseInt(prompt("ingrese otro numero: "));
+            let d = parseInt(prompt("ingprese otro numero: "));
+            let e = parseInt(prompt("ingrese otro numero: "));
+            let f = parseInt(prompt("ingprese otro numero: "));
+
+            let res = (a +(b/c))/(d + (e/f));
+            console.log(res);
+            */
+
+            //ejercicio 6:
+
+            /*
+            let notaprac = parseInt(prompt("ingrese la nota de la practica: "));
+            let notateo =  parseInt(prompt("ingrese la nota del teorico: "));
+            let notapar =  parseInt(prompt("ingrese la nota del parcial: "));
+
+            let notaFinal = (notaprac  * 0.3) + (notateo * 0.6) + (notapar * 0.1);
+
+            console.log(notaFinal);
+            */
+
+            //ejercicio 7:
+            /*
+            let catOpuesto =  parseInt(prompt("ingrese el cateto opuesto: "));
+            let catAdyacente =  parseInt(prompt("ingrese el cateto adyacente: "));  
+            
+            let hipotenusa = math.sqrt(math.pow(catOpuesto,2) + math.pow(catAdyacente,2));
+
+            console.log(hipotenusa);
+            */
+
+            //ejercicio 8:
+            /*
+            let x = parseInt(prompt("ingrese el valor de x: "));
+            let y = parseInt(prompt("ingrese el valor de y: "));
+
+            let res = math.sqrt(x)/(math.pow(y,2) - 1);
+
+            console.log(res);
+            */
+
+            /* Ejercicio 10: Escriba un programa que calcule las soluciones de una ecuación de 
+            segundo grado de la forma ax^2 + bx + c = 0, teniendo en cuenta que:*/  
+
+            let a = parseInt(prompt("ingrese el valor de a: "));
+            let b = parseInt(prompt("ingrese el valor de b: "));
+            let c = parseInt(prompt("ingrese el valor de c: "));
+
+            let x1 = (-b - math.sqrt(math.pow(b,2) - (4*a*c))) / (2*a);
+
+            let x2 = (-b + math.sqrt(math.pow(b,2) - (4*a*c))) / (2*a);
+
+            console.log(x1);
+            console.log(x2);
+
+
+
+
+
+
+
+        </script>
+    </body>
+    
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            //vamos a ver la concatenacion y la interpolacion
+            let nombre = "rene";
+            let apellido = "ccoyto";
+            
+            //concatenacion
+            let saludo = "hola mi nombre es " + nombre + " " + apellido + ".";
+            console.log(saludo);
+
+            //interpolacion de variables 
+             //template string 
+             let saludo2 = `hola mi nombre es ${nombre} ${apellido}.`;
+             console.log(saludo2);
+
+             //aqui se una una lista de elementos simple
+            let ul ="<ul><li>primavera</li><li>verano</li><li>otonio</li><li>invierno</li></ul>";
+            console.log(ul);
+            //aqui ya se muestra una template string
+            let ul2 = `
+            <ul>
+                <li>primavera</li>
+                <li>verano</li>
+                <li>otonio</li>
+                <li>invierno</li>
+            </ul>
+            `;
+            console.log(ul2);
+            
+        </script>
+    </body>
+    
+</html>

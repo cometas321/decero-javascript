@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos javascript</title>
+  </head>
+
+  <body>
+    <h1>fundamentos javascript</h1>
+    <script>
+
+      console.log(Date());
+
+      let fecha = new Date();
+      console.log(fecha);
+
+      //dia del mes
+      console.log(fecha.getDate());
+      //dia de la semana D-L-M-X-J-V-S -> 0-1-2-3-4-5-6
+      console.log(fecha.getDay());
+      //mes ene - feb - mar - abr - may - jun - jul - ago - sep - oct - nov - dic -> 0-1-2-3-4-5-6-7-8-9-10-11
+      console.log(fecha.getMonth());
+      //año
+      console.log(fecha.getYear());
+      console.log(fecha.getFullYear());
+      //hora en formato 24h
+      console.log(fecha.getHours());
+      //minutos
+      console.log(fecha.getMinutes());
+      //segundos
+      console.log(fecha.getSeconds());
+      //milisegundos
+      console.log(fecha.getMilliseconds());
+
+      console.log(fecha.toString()); 
+      console.log(fecha.toDateString());
+      console.log(fecha.toLocaleString());
+      console.log(fecha.toDateString());
+      console.log(fecha.toTimeString());
+      console.log(fecha.getTimezoneOffset());
+      console.log(fecha.getUTCDate());
+      console.log(fecha.getUTCHours());
+      console.log(fecha.getUTCDate());
+
+      console.log(Date.now());  
+
+
+    </script>
+  </body>
+
+</html>

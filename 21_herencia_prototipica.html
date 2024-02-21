@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos javascript</title>
+  </head>
+
+  <body>
+    <h1>fundamentos javascript</h1>
+    <script>
+
+      //creando nuestra funcion constructura
+      function Animal(nombre,genero){
+        //atributos
+        this.nombre = nombre;
+        this.genero = genero;
+      }
+
+      //metodos
+      Animal.prototype.saludar = function(){
+        console.log(`hola me llamo ${this.nombre}`);
+      }
+      Animal.prototype.sonar = function(){
+        console.log("hago sonidos por que estoy vivo");
+      }
+      
+
+      //HERENCIA PROTOTIPICA
+      function perro(nombre,genero,tamanio){
+        this.super = Animal;
+        this.super(nombre,genero);
+        this.tamanio = tamanio;
+      }
+
+      //perro esta heredando de animal
+      perro.prototype = new Animal();
+      perro.prototype.constructor = perro;
+
+      //sobrescritura de metodos del prototipo padre en el hijo
+      perro.prototype.sonar = function(){
+        console.log("soy un perro y mi sonido es un ladrido");
+      }
+      
+      //crear otro  metodo metodo que sea exclusivo del perro
+      perro.prototype.ladrar = function(){
+        console.log("guau guau");
+      }
+
+
+      const snoopy = new perro("snoopy","macho","mediano"),
+      lolaBonny = new Animal("lola bunny","hembra",);
+
+      console.log(snoopy);
+      console.log(lolaBonny);
+
+      snoopy.sonar();
+      snoopy.saludar();
+      snoopy.ladrar();
+      
+      lolaBonny.sonar();
+      lolaBonny.saludar();
+
+    </script>
+  </body>
+
+</html>

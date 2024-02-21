@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+
+
+            //let te permite estar cambiando el valor de la variable
+            //mientras que const no, siempre y cuando las variables sean primitivas
+            let a;
+            const PI = 3.1416;
+            console.log(PI);
+            a = "kenai";
+            console.log(a);
+
+            //en valores compuestos los const puede cambiar el valor  
+            const objeto ={
+                nombre: "rene",
+                edad: 20
+            }
+            const colores=["rojo", "azul", "verde"];
+            console.log(objeto);
+            console.log(colores);
+
+            objeto.correo = "rene@gmail.com";
+            colores.push("amarillo");
+
+            console.log(objeto);
+            console.log(colores);
+
+        </script>
+    </body>
+    
+</html>

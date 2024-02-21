@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            //Objetos en javascript
+            //dentro de un objeto  a las variables se les va a llamar atributos y a las funciones se les va a llamar metodos
+            const b ={
+
+            }
+            console.log(b);
+
+            const rene = {
+                nombre:"rene",
+                apellido:"ccoyto",
+                edad: 20,
+                pasatiempos: ["comer", "dormir", "leer"],
+                soltero:true,
+                contacto: {
+                    email:"rene@ccoyto",
+                    twitter:"@reneccoyto",
+                    movil: 123456789,
+                },
+                saludar: function(){
+                    console.log("hola");
+                },
+
+                decirMiNombre: function(){
+                    console.log(`hola me llamo ${this.nombre} mi apellido es ${this.apellido} y tengo ${this.edad} años y me puedes seguir en ${this.contacto.twitter} en twittesr`);
+                }
+                
+            }
+            console.log(rene);
+            console.log(rene.nombre);
+            console.log(rene.edad);
+            console.log(rene.pasatiempos[1]);
+            console.log(rene.contacto.twitter);
+
+            rene.saludar();
+            rene.decirMiNombre();
+
+            console.log(Object.keys(rene));
+            console.log(Object.values(rene));
+            console.log(rene.hasOwnProperty("nombre"));
+            console.log(rene.hasOwnProperty("nacimiento"));
+
+
+        </script>
+    </body>
+    
+</html>

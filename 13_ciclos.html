@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+
+            //ciclos while
+            let  contador = 0;
+
+            while(contador <= 10){
+                console.log(contador);
+                contador++;
+            }
+
+            //ciclo do while
+            contador = 0;
+
+            do{
+                console.log(contador);
+                contador++;
+            }while(contador <= 10);
+
+            
+            //ciclo for
+            for(let i = 0; i <= 10; i++){
+                console.log(i);
+            }
+
+            let numeros = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+            for(let i=0;i<numeros.length;i++){
+                console.log(numeros[i]);
+            }
+
+            //ciclo for of para arreglos
+            for(const numero of numeros){
+                console.log(numero);
+            }
+
+            const rene = {
+                nombre: "Rene",
+                edad: 29,
+                apellido: "Ccoyto",
+            }
+            //for in para objetos
+            for(const llave in rene){
+                console.log(llave);
+            }
+        </script>
+    </body>
+    
+</html>

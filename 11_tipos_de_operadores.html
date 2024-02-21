@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            //los operadores aritmeticos son los que se encargan de realizar operaciones matematicas
+            //operadores aritmeticos basicos + - * / %
+
+
+            let a = 5 + (5 - 10 ) * 3;
+            console.log(a);
+
+            //modulo 
+            let modulo = 5 % 2;
+            console.log(modulo);
+
+            //relacionales > < >= <= == === != !==
+            console.log(8 > 9);
+            console.log(8 < 9);
+            console.log(8 >= 9);
+            console.log(7 <= 7);
+            
+            // = es una asignacion de variable 
+            // == es una comparacion de valores
+            // === es una comparacion estricta lo cual compara el tipo de dato y e valor
+            
+            console.log(7 == 7);
+            console.log("7"==7);
+            console.log(0 ==    false);
+            
+            console.log(7 === 7);
+            console.log("7" === 7);
+            console.log(0 === false);
+
+            //operadores de incremento y decremento 
+            // el ejemplo se puede aplicar 
+
+            let i = 1;
+            //i = i  + 2;
+            i += 2;
+            console.log(i);
+
+            //oerador unario
+            let j = 1;
+            ++j;
+            console.log(j);
+            
+            //operadores logicos 
+            //! not niega es decir lo que es verdadero lo vuelve falso y viceversa
+            //&& and cuando tengo 2 o mas condiciones todas tienen que cumplirse, es decir ser verdaderas para que AND se valide 
+            //|| or cuanto tengo 2 o mas valores solo una tiene que ser verdadera para que OR se valide
+
+            console.log(true && false);
+            console.log(true || false);
+            console.log(!true);
+
+
+        </script>
+    </body>
+    
+</html>

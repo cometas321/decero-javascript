@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos javascript</title>
+  </head>
+
+  <body>
+    <h1>fundamentos javascript</h1>
+    <script>
+
+      //esto es una funcion anonima
+      const saludar = function (){
+        console.log("hola mundo");
+      }
+      saludar()
+      //ahora realizaremos una arrow function
+      const saludar2 = ()=>console.log("hola mundo");
+      saludar2();
+
+      //una arrow function que pueda recibir argumentos
+      const saludar3 = nombre =>console.log(`hola ${nombre}`);
+      saludar3("rene");
+     
+      //usando la funcion declarada
+      const sumar = function(a,b){
+        return a+b;
+      }
+
+      console.log(sumar(8,9));
+      //ahora sin usar la funcion declarada y en su lugar la arrow funcion
+      const sumar2 = (a,b)=>a+b;
+      console.log(sumar(9,9));
+
+
+      const funciondevariaslineas = ()=>{
+        console.log("uno");
+        console.log("dos");
+        console.log("tres");
+      }
+
+      funciondevariaslineas()
+
+      const numeros = [1,2,3,4,5];
+
+      //usando el forEach
+      numeros.forEach(function(el,index){
+        console.log(`el elemento ${el} esta en la posicion ${index}`);
+      })
+      
+      const numero = [1,2,3,4,5];
+      //el foreach con arrow function
+      numero.forEach((el,index)=>{
+        console.log(`el elemento ${el} esta en la posicion ${index}`);
+      })
+
+      const numer = [1,2,3,4,5];
+      //ahora simplificando a una sola linea
+      numer.forEach((el,index)=>console.log(`${el} esta en la posicion ${index}`));
+
+
+      //las arrow funtion son capaces de capturar 
+      /*
+      function perro(){
+        console.log(this);
+      }
+      perro();
+      */
+
+      const perro = {
+        nombre:"kenai",
+        ladrar(){
+          console.log(this);
+        }
+      }
+
+      perro.ladrar();
+
+    </script>
+  </body>
+</html>
+

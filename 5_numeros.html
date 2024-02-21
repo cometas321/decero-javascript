@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fundamentos javascript</title>
+    </head>
+
+    <body>
+        <h1>fundamentos javascript</h1>
+        <script>
+            let a = 2;
+            let b = new Number(1);
+            let c = 7.19;
+            let d = "5.67";
+
+
+            console.log(a, b);
+            //el metodo toFixed se usa para redondear un numero de acuerdo a la cantidad de decimales que le envias en el parametro
+            console.log(c.toFixed(1));
+            //el metodo parseInt se usa para mostrar el entero de un numero
+            console.log(parseInt(c));
+            //el metodo parseFloat se usa para mostrar el decimal de un numero
+            console.log(parseFloat(c));
+            //el metodo typeof se usa para saber de que tipo es nuestra variable
+            console.log(typeof c,typeof d)
+
+            console.log(a+b);
+            //como el parseInt y el parseFloat comvierten un string a un numero
+            console.log(c + parseInt(d));
+            console.log(c + parseFloat(d));
+            //el parseInt y el parseFloat son metodos de  la clase number
+            console.log(c + Number.parseInt(d));
+            console.log(c + Number.parseFloat(d));
+            //el metodo isNaN se usa para saber si un valor es un numero o no
+        </script>
+    </body>
+    
+</html> 
